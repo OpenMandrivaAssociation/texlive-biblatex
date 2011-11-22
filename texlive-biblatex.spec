@@ -1,11 +1,11 @@
-# revision 23324
+# revision 24596
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex
-# catalog-date 2011-08-01 13:12:37 +0200
+# catalog-date 2011-11-14 00:54:44 +0100
 # catalog-license lppl
-# catalog-version 1.6
+# catalog-version 1.7
 Name:		texlive-biblatex
-Version:	1.6
+Version:	1.7
 Release:	1
 Summary:	Bibliographies in LaTeX using BibTeX for sorting only
 Group:		Publishing
@@ -21,37 +21,34 @@ Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
 
 %description
-The biblatex package is a complete reimplementation of the
-bibliographic facilities provided by LaTeX in conjunction with
-BibTeX. It redesigns the way in which LaTeX interacts with
-BibTeX at a fairly fundamental level. With biblatex, BibTeX is
-only used (if it is used at all) to sort the bibliography and
-to generate labels. Instead of being implemented in BibTeX's
-style files, the formatting of the bibliography is entirely
-controlled by TeX macros. Good working knowledge in LaTeX
-should be sufficient to design new bibliography and citation
-styles -- there is no need to learn BibTeX's postfix stack
-language. Just like the bibliography styles, all citation
-commands may be freely (re)defined. In fact, users need not
-remain bound to BibTeX for use with biblatex: an alternative
-bibliography processor biblatex-biber is available. Development
-of biblatex and biblatex-biber is closely coupled; the present
-release of biblatex is designed to work with biblatex-biber
-version 0.9.3. The package needs e-TeX, and uses the author's
-etoolbox and logreq packages. For users of biblatex-biber,
-version 0.9 is required (at least; refer to the notes for the
-version of biblatex-biber that you are using). Apart from the
-features unique to biblatex, the package also incorporates core
-features of the following packages: babelbib, bibtopic,
-bibunits, chapterbib, cite, inlinebib, mcite and mciteplus,
-mlbib, multibib, splitbib. There are also some conceptual
-parallels to the natbib and amsrefs packages. The biblatex
-package supports split bibliographies, multiple bibliographies
-within one document, and separate lists of bibliographic
-shorthands. Bibliographies may be subdivided into parts (by
-chapter, by section, etc.) and/or segmented by topics (by type,
-by keyword, etc.). The package is fully localized and can
-interface with the babel package.
+Biblatex is a complete reimplementation of the bibliographic
+facilities provided by LaTeX in conjunction with BibTeX. It
+redesigns the way in which LaTeX interacts with BibTeX at a
+fairly fundamental level. With biblatex, BibTeX is only used
+(if it is used at all) to sort the bibliography and to generate
+labels. Formatting of the bibliography is entirely controlled
+by TeX macros (the BibTeX-based mechanism embeds some parts of
+formatting in the BibTeX style file. Good working knowledge in
+LaTeX should be sufficient to design new bibliography and
+citation styles; nothing related to BibTeX's language is
+needed. In fact, users need not remain bound to BibTeX for use
+with biblatex: an alternative bibliography processor biblatex-
+biber is available. Development of biblatex and biblatex-biber
+is closely coupled; the present release of biblatex is designed
+to work with biblatex-biber version 0.9.3. The package needs e-
+TeX, and uses the author's etoolbox and logreq packages. For
+users of biblatex-biber, version 0.9 is required (at least;
+refer to the notes for the version of biblatex-biber that you
+are using). Apart from the features unique to biblatex, the
+package also incorporates core features of the following
+packages: babelbib, bibtopic, bibunits, chapterbib, cite,
+inlinebib, mcite and mciteplus, mlbib, multibib, splitbib.
+Biblatex supports split bibliographies and multiple
+bibliographies within one document, and separate lists of
+bibliographic shorthands. Bibliographies may be subdivided into
+parts (by chapter, by section, etc.) and/or segmented by topics
+(by type, by keyword, etc.). Biblatex is fully localized and
+can interface with the babel.
 
 %pre
     %_texmf_mktexlsr_pre
@@ -178,6 +175,7 @@ interface with the babel package.
 %{_texmfdistdir}/tex/latex/biblatex/lbx/nynorsk.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/portuges.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/portuguese.lbx
+%{_texmfdistdir}/tex/latex/biblatex/lbx/russian.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/spanish.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/swedish.lbx
 %doc %{_texmfdistdir}/doc/latex/biblatex/README
