@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 Biblatex is a complete reimplementation of the bibliographic
@@ -50,20 +48,12 @@ parts (by chapter, by section, etc.) and/or segmented by topics
 (by type, by keyword, etc.). Biblatex is fully localized and
 can interface with the babel.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -263,7 +253,6 @@ can interface with the babel.
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/82-style-debug.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/82-style-debug.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/biblatex-examples.bib
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -274,5 +263,3 @@ can interface with the babel.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
