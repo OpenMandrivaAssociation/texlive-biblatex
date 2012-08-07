@@ -1,12 +1,12 @@
-# revision 24596
+# revision 27308
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex
-# catalog-date 2011-11-14 00:54:44 +0100
+# catalog-date 2012-07-31 19:56:52 +0200
 # catalog-license lppl
-# catalog-version 1.7
+# catalog-version 2.1
 Name:		texlive-biblatex
-Version:	1.7
-Release:	2
+Version:	2.1
+Release:	1
 Summary:	Bibliographies in LaTeX using BibTeX for sorting only
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex
@@ -33,7 +33,7 @@ needed. In fact, users need not remain bound to BibTeX for use
 with biblatex: an alternative bibliography processor biblatex-
 biber is available. Development of biblatex and biblatex-biber
 is closely coupled; the present release of biblatex is designed
-to work with biblatex-biber version 0.9.3. The package needs e-
+to work with biblatex-biber version 0.9.6. The package needs e-
 TeX, and uses the author's etoolbox and logreq packages. For
 users of biblatex-biber, version 0.9 is required (at least;
 refer to the notes for the version of biblatex-biber that you
@@ -58,7 +58,6 @@ can interface with the babel.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/bibtex/bib/biblatex/biblatex-examples.bib
 %{_texmfdistdir}/bibtex/bst/biblatex/biblatex.bst
 %{_texmfdistdir}/bibtex/csf/biblatex/latin1.csf
 %{_texmfdistdir}/bibtex/csf/biblatex/latin1_at.csf
@@ -111,7 +110,10 @@ can interface with the babel.
 %{_texmfdistdir}/tex/latex/biblatex/biblatex.cfg
 %{_texmfdistdir}/tex/latex/biblatex/biblatex.def
 %{_texmfdistdir}/tex/latex/biblatex/biblatex.sty
+%{_texmfdistdir}/tex/latex/biblatex/biblatex1.sty
+%{_texmfdistdir}/tex/latex/biblatex/biblatex2.sty
 %{_texmfdistdir}/tex/latex/biblatex/blx-compat.def
+%{_texmfdistdir}/tex/latex/biblatex/blx-dm.def
 %{_texmfdistdir}/tex/latex/biblatex/blx-mcite.def
 %{_texmfdistdir}/tex/latex/biblatex/blx-natbib.def
 %{_texmfdistdir}/tex/latex/biblatex/cbx/alphabetic-verb.cbx
@@ -156,6 +158,7 @@ can interface with the babel.
 %{_texmfdistdir}/tex/latex/biblatex/lbx/french.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/german.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/greek.lbx
+%{_texmfdistdir}/tex/latex/biblatex/lbx/icelandic.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/italian.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/naustrian.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/newzealand.lbx
@@ -172,6 +175,7 @@ can interface with the babel.
 %doc %{_texmfdistdir}/doc/latex/biblatex/RELEASE
 %doc %{_texmfdistdir}/doc/latex/biblatex/biblatex.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex/biblatex.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex/bibtex/bib/biblatex-examples.bib
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/01-introduction.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/01-introduction.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/02-annotations.pdf
@@ -210,6 +214,8 @@ can interface with the babel.
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/40-style-alphabetic.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/41-style-alphabetic-verb.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/41-style-alphabetic-verb.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/42-style-alphabetic-template.pdf
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/42-style-alphabetic-template.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/50-style-authoryear.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/50-style-authoryear.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/51-style-authoryear-ibid.pdf
@@ -252,6 +258,10 @@ can interface with the babel.
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/81-style-draft.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/82-style-debug.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/82-style-debug.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/90-related-entries.pdf
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/90-related-entries.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/91-sorting-schemes.pdf
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/91-sorting-schemes.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/biblatex-examples.bib
 
 #-----------------------------------------------------------------------
