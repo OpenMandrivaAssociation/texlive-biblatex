@@ -1,11 +1,11 @@
-# revision 27308
+# revision 27571
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex
-# catalog-date 2012-07-31 19:56:52 +0200
+# catalog-date 2012-08-17 18:31:30 +0200
 # catalog-license lppl
-# catalog-version 2.1
+# catalog-version 2.2
 Name:		texlive-biblatex
-Version:	2.1
+Version:	2.2
 Release:	1
 Summary:	Bibliographies in LaTeX using BibTeX for sorting only
 Group:		Publishing
@@ -58,6 +58,7 @@ can interface with the babel.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/bibtex/bib/biblatex/biblatex/biblatex-examples.bib
 %{_texmfdistdir}/bibtex/bst/biblatex/biblatex.bst
 %{_texmfdistdir}/bibtex/csf/biblatex/latin1.csf
 %{_texmfdistdir}/bibtex/csf/biblatex/latin1_at.csf
@@ -175,7 +176,6 @@ can interface with the babel.
 %doc %{_texmfdistdir}/doc/latex/biblatex/RELEASE
 %doc %{_texmfdistdir}/doc/latex/biblatex/biblatex.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex/biblatex.tex
-%doc %{_texmfdistdir}/doc/latex/biblatex/bibtex/bib/biblatex-examples.bib
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/01-introduction.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/01-introduction.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/02-annotations.pdf
