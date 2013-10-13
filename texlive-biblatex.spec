@@ -1,11 +1,11 @@
-# revision 27571
+# revision 31234
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex
-# catalog-date 2012-08-17 18:31:30 +0200
+# catalog-date 2013-07-18 08:03:24 +0200
 # catalog-license lppl
-# catalog-version 2.2
+# catalog-version 2.7a
 Name:		texlive-biblatex
-Version:	2.2
+Version:	2.7a
 Release:	1
 Summary:	Bibliographies in LaTeX using BibTeX for sorting only
 Group:		Publishing
@@ -152,6 +152,9 @@ can interface with the babel.
 %{_texmfdistdir}/tex/latex/biblatex/lbx/brazilian.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/british.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/canadian.lbx
+%{_texmfdistdir}/tex/latex/biblatex/lbx/catalan.lbx
+%{_texmfdistdir}/tex/latex/biblatex/lbx/croatian.lbx
+%{_texmfdistdir}/tex/latex/biblatex/lbx/czech.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/danish.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/dutch.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/english.lbx
@@ -167,6 +170,7 @@ can interface with the babel.
 %{_texmfdistdir}/tex/latex/biblatex/lbx/norsk.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/norwegian.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/nynorsk.lbx
+%{_texmfdistdir}/tex/latex/biblatex/lbx/polish.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/portuges.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/portuguese.lbx
 %{_texmfdistdir}/tex/latex/biblatex/lbx/russian.lbx
@@ -180,6 +184,7 @@ can interface with the babel.
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/01-introduction.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/02-annotations.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/02-annotations.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/03-localization-keys.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/10-references-per-section.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/10-references-per-section.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/11-references-by-section.pdf
@@ -200,10 +205,12 @@ can interface with the babel.
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/18-numeric-hybrid.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/19-alphabetic-prefixed.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/19-alphabetic-prefixed.tex
-%doc %{_texmfdistdir}/doc/latex/biblatex/examples/20-indexing-basic.pdf
-%doc %{_texmfdistdir}/doc/latex/biblatex/examples/20-indexing-basic.tex
-%doc %{_texmfdistdir}/doc/latex/biblatex/examples/21-indexing-advanced.pdf
-%doc %{_texmfdistdir}/doc/latex/biblatex/examples/21-indexing-advanced.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/20-indexing-single.pdf
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/20-indexing-single.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/21-indexing-multiple.pdf
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/21-indexing-multiple.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/22-indexing-subentry.pdf
+%doc %{_texmfdistdir}/doc/latex/biblatex/examples/22-indexing-subentry.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/30-style-numeric.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/30-style-numeric.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex/examples/31-style-numeric-comp.pdf
