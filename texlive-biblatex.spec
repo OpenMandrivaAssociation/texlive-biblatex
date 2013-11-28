@@ -1,11 +1,11 @@
-# revision 31234
+# revision 32245
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex
-# catalog-date 2013-07-18 08:03:24 +0200
+# catalog-date 2013-11-24 17:41:16 +0100
 # catalog-license lppl
-# catalog-version 2.7a
+# catalog-version 2.8a
 Name:		texlive-biblatex
-Version:	2.7a
+Version:	2.8a
 Release:	1
 Summary:	Bibliographies in LaTeX using BibTeX for sorting only
 Group:		Publishing
