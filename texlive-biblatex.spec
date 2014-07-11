@@ -6,7 +6,7 @@
 # catalog-version 2.8a
 Name:		texlive-biblatex
 Version:	2.8a
-Release:	6
+Release:	7
 Summary:	Bibliographies in LaTeX using BibTeX for sorting only
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex
