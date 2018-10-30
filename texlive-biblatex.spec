@@ -1,6 +1,6 @@
 Name:		texlive-biblatex
 Version:	3.11
-Release:	2
+Release:	3
 Summary:	Bibliographies in LaTeX using BibTeX for sorting only
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex
