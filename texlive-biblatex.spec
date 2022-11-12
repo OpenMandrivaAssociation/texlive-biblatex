@@ -1,12 +1,12 @@
 Name:		texlive-biblatex
-Version:	3.12
+Version:	63878
 Release:	1
 Summary:	Bibliographies in LaTeX using BibTeX for sorting only
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex.r63878.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex.doc.r63878.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -43,12 +43,12 @@ parts (by chapter, by section, etc.) and/or segmented by topics
 can interface with the babel.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -59,7 +59,7 @@ can interface with the babel.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
