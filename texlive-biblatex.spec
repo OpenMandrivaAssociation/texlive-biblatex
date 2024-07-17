@@ -1,5 +1,5 @@
 Name:		texlive-biblatex
-Version:	66403
+Version:	70725
 Release:	1
 Summary:	Bibliographies in LaTeX using BibTeX for sorting only
 Group:		Publishing
