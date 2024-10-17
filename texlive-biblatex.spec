@@ -3,7 +3,7 @@ Version:	70725
 Release:	1
 Summary:	Bibliographies in LaTeX using BibTeX for sorting only
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/biblatex
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex.doc.r%{version}.tar.xz
